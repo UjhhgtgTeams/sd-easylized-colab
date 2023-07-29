@@ -2,16 +2,19 @@
 
 Want to try out Stable Diffusion but your computer is potato? Don't worry, because this notebook is here to help. "Borrow" Google's Colab servers and run it there.
 
+___Note that this kind of use is currently restricted by Google / Kaggle if you don't have a paid plan. Although no bans are planned, your session may be terminated / deleted at any time.___
+___For more information on this, please refer to [here](https://github.com/googlecolab/colabtools/issues/3591) and [here](https://twitter.com/thechrisperry/status/1649189902079381505).___
+
 ## Usage
 
 ### Google Colab
 
-1. Open [the notebook on Google Colab](https://colab.research.google.com/github/UjhhgtgTeams/sd-easylized-colab/blob/master/Stable_Diffusion_Easylized_(Google_Colab_Version).ipynb).
+1. Open [this notebook on Google Colab](https://colab.research.google.com/github/UjhhgtgTeams/sd-easylized-colab/blob/master/Stable_Diffusion_Easylized_(Google_Colab_Version).ipynb).
 2. Log in to your Google account.
 3. Tweak the options.
 4. Click `Runtime->Run All` in the menu bar.
-(4a. Grant the notebook your Google Drive's access if necessary.)
-5. Wait until a link pops up in the code output and open it. (it will take a few ten seconds for the link to be reachable.)
+5. (Grant the notebook your Google Drive's access if necessary.)
+6. Wait until a link pops up in the code output and open it. (it will take a few ten seconds for the link to be reachable.)
 
 ### Kaggle
 
@@ -25,13 +28,22 @@ Want to try out Stable Diffusion but your computer is potato? Don't worry, becau
 8. Click `Run All` in the menu bar.
 9. Wait until a link pops up in the code output and open it. (it will take a few ten seconds for the link to be reachable.)
 
-___Note that this kind of use is currently restricted by Google / Kaggle if you don't have a paid plan. Although no bans are planned, your session may be terminated / deleted at any time.___
-___For more information on this, please refer to [here](https://github.com/googlecolab/colabtools/issues/3591) and [here](https://www.reddit.com/r/StableDiffusion/comments/12t8tc7/comment/jh2yhaz/?context=3).___
-
 ## Known Bugs
 
 - It takes years for Colab to compile xformers (which is used to speed up image generation) so this procedure is currently disabled. \
-Solution: You can install it from PyPI for now (available in the config).
+Solution: You can install it from PyPi for now (available in the config).
+- Kaggle will not enable GPUs, the Internet, package updates and data persistence for notebooks by default. \
+Solution: In the bar on the right, look for `Notebook Options` and set the options as below:
+
+```none
+Accelerator: GPU T4 * 2
+Language: Python
+Persistence: Variables and Files
+Environment: Always use latest environment
+Internet: On
+```
+
+If you couldn't find the options to enable GPUs and the Internet, [verify your phone number](https://www.kaggle.com/settings/account).
 
 ## Contributing
 
