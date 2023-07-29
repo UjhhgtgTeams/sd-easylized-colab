@@ -1,11 +1,13 @@
 # Stable Diffusion Easylized
 
-Want to try out Stable Diffusion but your computer is potato? Don't worry, because this notebook is here to help. "Borrow" Google's Colab servers and run it there.
+Want to try out Stable Diffusion but your computer is potato? Don't worry, because this notebook is here to help. "Borrow" Google / Kaggle's servers and run it there.
 
-___Note that this kind of use is currently restricted by Google / Kaggle if you don't have a paid plan. Although no bans are planned, your session may be terminated / deleted at any time.___
+___Disclaimer: This kind of use is currently restricted by Google / Kaggle if you don't have a paid plan. Although no bans are planned, your session may be terminated / deleted at any time.___
 ___For more information on this, please refer to [here](https://github.com/googlecolab/colabtools/issues/3591) and [here](https://twitter.com/thechrisperry/status/1649189902079381505).___
 
 ## Usage
+
+___Please note that the Kaggle version may be slightly not up-to-date.___
 
 ### Google Colab
 
